@@ -6,6 +6,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 keymap.set("n", "x", '"_x') -- in NORMAL mode use x to delete single character but dont keep it in clipboard
 
+keymap.set("n", "<C-s>", ":w<CR>") -- in NORMAL mode save
+keymap.set("n", "zz", ":wq<CR>") -- in NORMAL mode save and exit
+
 keymap.set("v", "<Tab>", ">") -- in VISUAL mode use Tab to indent lines
 
 -- Split Window, Close Window:
