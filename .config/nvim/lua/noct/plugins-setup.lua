@@ -1,4 +1,4 @@
-require("lspconfig").pyright.setup({})
+#require("lspconfig").pyright.setup({})
 
 local ensure_packer = function()
 	local fn = vim.fn
