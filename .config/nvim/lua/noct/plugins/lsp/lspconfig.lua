@@ -62,6 +62,15 @@ lspconfig["gopls"].setup({
 	on_attach = on_attach,
 	cmd = { "gopls" },
 	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+	settings = {
+		gopls = {
+			completeUnimported = true,
+			usePlaceholders = true,
+			analyses = {
+				unusedParams = true,
+			},
+		},
+	},
 })
 
 -- configure python server
