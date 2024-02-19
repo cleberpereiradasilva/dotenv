@@ -87,6 +87,10 @@ https://brew.sh/
       sudo install lazygit /usr/local/bin
   ```
 
+# Install `rg` to **telescope** works
+
+    `brew install rg`
+
 # Install **nvim**
 
 - Mac Os
