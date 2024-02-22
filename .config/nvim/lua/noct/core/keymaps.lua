@@ -7,7 +7,7 @@ keymap.set("n", "x", '"_x') -- in NORMAL mode use x to delete single character b
 
 keymap.set("n", "ss", ":w<CR>") -- in NORMAL mode save
 keymap.set("n", "zz", ":wq<CR>") -- in NORMAL mode save and exit
-keymap.set("n", "qq", ":q<CR>") -- in NORMAL mode exit
+keymap.set("n", "qq", ":q!<CR>") -- in NORMAL mode exit
 
 keymap.set("v", "<Tab>", ">") -- in VISUAL mode use Tab to indent lines
 

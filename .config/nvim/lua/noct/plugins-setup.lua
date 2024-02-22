@@ -86,6 +86,9 @@ return require("packer").startup(function(use)
 	-- lazygit plugin
 
 	use("kdheepak/lazygit.nvim") -- open lazygit inside neovim
+  use {'akinsho/git-conflict.nvim', tag = "*", config = function()
+    require('git-conflict').setup()
+  end}
 
 	-- nvim-ts-context-commentstring for better commenting when on JSX files
 	-- use("JoosepAlviste/nvim-ts-context-commentstring")
