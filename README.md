@@ -109,6 +109,19 @@ https://brew.sh/
 - Open nvim and install all plugins
   - `nvim -c "PackerInstall"`
 
+# Window Manager
+
+- Mac Os
+
+  - `brew install koekeishiya/formulae/yabai`
+  - `brew install koekeishiya/formulae/skhd`
+  - `brew services start yabai`
+  - `brew services restart skhd`
+    You can check configs in **dotenv/yabai** and **dotenv/skhd**
+
+- Linux
+  - TODO
+
 # Keybinds
 
 - **space + e**: open/close tree
