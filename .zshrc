@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='colorls -la'
 alias lg='lazygit'
+alias activate="source /Users/noct/work/.venv/bin/activate"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -119,12 +120,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 
 
-eval "SSH_AUTH_SOCK=/var/folders/l5/zr4333z52p180tb1j8btrnvw0000gn/T//ssh-FINn0lVhdrez/agent.12909; export SSH_AUTH_SOCK;
-SSH_AGENT_PID=12910; export SSH_AGENT_PID;
-echo Agent pid 12910;" > /dev/null
+eval $(ssh-agent -s) >> /dev/null
 ssh-add -q ~/.ssh/id_cleberpereiradasilva
+ssh-add -q ~/.ssh/id_arena
 
 
- export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
