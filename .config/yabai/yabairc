@@ -33,3 +33,6 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^VLC" manage=off
 yabai -m rule --add app="^TextEdit$" manage=off
+yabai -m rule --add app="^Sublime Text$" manage=off
+yabai -m rule --add app="^Tor Browser$" manage=off
+yabai -m rule --add app="^Calendar$" manage=off

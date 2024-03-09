@@ -2,7 +2,7 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 opt.scrolloff = 15
-
+opt.mouse = ""
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
