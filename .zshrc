@@ -10,6 +10,7 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export GH_TOKEN=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
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -128,3 +129,28 @@ ssh-add -q ~/.ssh/id_arena
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+export NODE_OPTIONS=--max_old_space_size=4096
+export ANDROID_SDK_ROOT=/Users/noct/work/Android/sdk
+export ANDROID_HOME=/Users/noct/work/Android/sdk
+export ANDROID_SDK_HOME=/Users/noct/work/Android/sdk
+export ANDROID_AVD_HOME=/Users/noct/work/Android/.emulator/avd
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/Caskroom/android-commandlinetools/11076708:$PATH"
+export PATH="/Users/noct/work/Android/sdk/platform-tools:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+export PATH=$PATH:$ANDROID_HOME/bin:$ANDROID_HOME/platform-tools
+
+
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# pnpm
+export PNPM_HOME="/Users/noct/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
